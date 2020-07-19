@@ -18,7 +18,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ContactsComponent } from './contacts/contacts.component';
-
+import { LeaderService } from './services/leader.service';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 @NgModule({
   declarations: [
@@ -36,7 +36,7 @@ import { AppRoutingModule } from './app-routing/app-routing.module';
       ,MatListModule,MatGridListModule,MatCardModule,MatButtonModule,AppRoutingModule
   ],
   providers: [
-    DishService,PromotionService
+    DishService,PromotionService,LeaderService
   ],
   bootstrap: [AppComponent]
 })
