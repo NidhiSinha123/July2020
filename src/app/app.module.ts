@@ -10,7 +10,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
 import { DishService } from './services/dish.service';
-
+import { PromotionService } from './services/promotion.service';
 import { MenuComponent } from './menu/menu.component';
 import { DishdetailComponent } from './dishdetail/dishdetail.component';
 import { HeaderComponent } from './header/header.component';
@@ -36,7 +36,7 @@ import { AppRoutingModule } from './app-routing/app-routing.module';
       ,MatListModule,MatGridListModule,MatCardModule,MatButtonModule,AppRoutingModule
   ],
   providers: [
-    DishService
+    DishService,PromotionService
   ],
   bootstrap: [AppComponent]
 })
